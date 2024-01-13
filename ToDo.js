@@ -6,6 +6,7 @@ const card = document.querySelector(".card");
 const noteInput = document.createElement("input");
 noteInput.type = "text";
 noteInput.name = "inputNote";
+noteInput.placeholder = "Add a task..";
 noteInput.classList.add("textEdit");
 
 noteCantainer.insertAdjacentElement("afterbegin", noteInput);
