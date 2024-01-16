@@ -32,7 +32,7 @@ const cardContainer = (note) => {
   const cardContent = `
     <div class="notesList" >
       <h3>${note}</h3>
-      <button class="dltBtn" onclick="cutHandler(event)"> Delete </button>
+      <button class="dltBtn" onclick="cutHandler(event)" >Delete</button>
     </div>
   `;
 
