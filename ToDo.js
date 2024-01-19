@@ -6,7 +6,7 @@ const card = document.querySelector(".card");
 const noteInput = document.createElement("input");
 noteInput.type = "text";
 noteInput.name = "inputNote";
-noteInput.placeholder = "Please enter a task..";
+noteInput.placeholder = "Please enter a task...";
 noteInput.classList.add("textEdit");
 
 noteCantainer.insertAdjacentElement("afterbegin", noteInput);
@@ -31,8 +31,10 @@ const loadNotes = () => {
 const cardContainer = (note) => {
   const cardContent = `
     <div class="notesList" >
-      <h3>${note}</h3>
-      <button class="dltBtn" onclick="cutHandler(event)"> Delete </button>
+      <div>
+        <h3>${note}</h3>
+      </div>
+        <button class="dltBtn" onclick="cutHandler(event)"> Delete </button>
     </div>
   `;
 
